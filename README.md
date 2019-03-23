@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 *  create  [mongodb Atlas](https://www.mongodb.com/cloud/atlas) account and follow [instructions](https://www.youtube.com/watch?v=_d8CBOtadRA) or through [official website](https://docs.mongodb.com/guides/cloud/atlas/)
-*  create  your database and insert collection for   collection named `` instructors ``  for  blogs and insert some documents inside.
+*  create  your database. Create collection named `` instructors ``  for  blogs and insert some documents inside.
     screen shot from Mongodb atlas
     
     ![instructor](https://res.cloudinary.com/elhaw/image/upload/v1553336611/instructors.jpg)
