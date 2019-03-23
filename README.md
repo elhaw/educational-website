@@ -48,5 +48,5 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Authors
 
-Ready template made  by * **Colorlib** - [Front end](https://colorlib.com/wp/template/skwela/)
+Ready template made  by  **Colorlib** - [Front end](https://colorlib.com/wp/template/skwela/)
 
