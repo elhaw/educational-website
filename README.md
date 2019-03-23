@@ -12,10 +12,10 @@ What things you need to install the software and how to install them
 *  create  [mongodb Atlas](https://www.mongodb.com/cloud/atlas) account and follow [instructions](https://www.youtube.com/watch?v=_d8CBOtadRA) or through [official website](https://docs.mongodb.com/guides/cloud/atlas/)
 *  create  your database and insert collection for   collection named `` instructors ``  for  blogs and insert some documents inside.
     screen shot from Mongodb atlas
-    ```
+    
     ![](readmeImages/instructors.jpg)
 
-    ```
+
 *  create  collection named `` blogs ``  for  blogs and insert some documents inside.
     screen shot from Mongodb atlas
     ```
