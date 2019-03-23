@@ -18,10 +18,10 @@ What things you need to install the software and how to install them
 
 *  create  collection named `` blogs ``  for  blogs and insert some documents inside.
     screen shot from Mongodb atlas
-    ```
+    
     ![](readmeImages/blogs.jpg)
 
-    ```
+
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
