@@ -1,0 +1,22 @@
+section.site-section
+    .container
+        .row.justify-content-center.mb-5
+            .col-md-7.text-center
+                h2 Meet Your Instructors
+                p.lead
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.
+        .row.justify-content-center
+            section.school-features.text-dark.d-flex
+                .inner
+                    if instructors.length > 0
+                        each instructor in instructors
+                            .media.d-block.feature.text-center
+                                img.mb-3(src=`${instructor.avatarUrl}`, alt='Image placeholder')
+                                .media-body
+                                    h3.mt-0 #{instructor.fullname}
+                                    p.instructor-meta #{instructor.job} Expert
+                                    p
+                                        | #{instructor.bio}
+                    else
+                        p
+                            | we will add our stuff soon :) 

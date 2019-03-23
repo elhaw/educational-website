@@ -1,0 +1,33 @@
+header(role='banner')
+    nav.navbar.navbar-expand-md.navbar-dark.bg-light
+        .container
+            a.navbar-brand.absolute(href='/') Skwela
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExample05', aria-controls='navbarsExample05', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarsExample05.collapse.navbar-collapse.navbar-light
+                ul.navbar-nav.mx-auto
+                    li.nav-item
+                        a.nav-link.active(href='/') Home
+                    li.nav-item
+                        a.nav-link(href='/blog') Blog
+                    li.nav-item
+                        a.nav-link(href='/about') About
+                    li.nav-item
+                        a.nav-link(href='/contact') Contact
+                ul.navbar-nav.absolute-right
+                    if (!user)
+                        li.nav-item
+                            a.nav-link(href='/users/login') Login
+                        li.nav-item
+                            a.nav-link(href='/users/regestration') Register
+                    else
+                        li.nav-item
+                            a.nav-link(href='/users/logout')  
+                                | logout 
+                        li.nav-item
+                            a.nav-link(href='/users/account')  
+                                | My account #{user.username}
+                                
+
+                            
+// END header

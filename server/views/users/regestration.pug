@@ -1,0 +1,41 @@
+extends ../layout/index
+block banner
+    section.site-hero.site-hero-innerpage.overlay(data-stellar-background-ratio='0.5', style='background-image: url(/images/big_image_1.jpg);')
+        .container
+            .row.align-items-center.site-hero-inner.justify-content-center
+                .col-md-8.text-center
+                    .mb-5.element-animate
+                        h1 Register
+block features
+    section.site-section.bg-light
+        .container
+            .row.justify-content-center
+                .col-md-5.box
+                    h2.mb-5 Register new account
+                    form(action='/users/regestration', method='POST')
+                        .row
+                            .col-md-12.form-group
+                                label(for='userName') User name
+                                input#userName.form-control(type='username' name='username')
+                        .row
+                            .col-md-12.form-group
+                                label(for='emailAddress') Email Address
+                                input#emailAddress.form-control(type='email' name='email')
+                        .row
+                            .col-md-12.form-group
+                                label(for='userPassword') Password
+                                input#userPassword.form-control(type='password' name='password')
+                        .row
+                            .col-md-6.form-group
+                                input.btn.btn-primary(type='submit', value='Register')
+block content
+    section.overflow
+        .container
+            .row.justify-content-center.align-items-center
+                .col-lg-7.order-lg-3.order-1.mb-lg-0.mb-5
+                    img.img-md-fluid(src='/images/person_testimonial_1.jpg', alt='Image placeholder')
+                .col-lg-1.order-lg-2
+                .col-lg-4.order-lg-1.order-2.mb-lg-0.mb-5
+                    blockquote.testimonial
+                        | “ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt nihil ab cumque molestiae commodi. ”
+                    p — John Doe, Certified ReactJS Student   

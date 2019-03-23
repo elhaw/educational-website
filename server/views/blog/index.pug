@@ -1,0 +1,61 @@
+extends ../layout/index
+block banner
+    section.site-hero.site-hero-innerpage.overlay(data-stellar-background-ratio='0.5', style='background-image: url(images/big_image_1.jpg);')
+        .container
+            .row.align-items-center.site-hero-inner.justify-content-center
+                .col-md-8.text-center
+                    .mb-5.element-animate
+                        h1 Our Blog 
+block features
+    section.site-section.bg-light
+        .container
+            .row.justify-content-center.mb-5
+                .col-md-7.text-center
+                    h2 We Share Our Thoughts
+                    p.lead
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.
+            .row.blog-entries
+                if blogs.length > 0 
+                    each blog in blogs
+                        .col-md-4.col-sm-6.col-12
+                            a.blog-entry(href=`/blog/${blog.shortname}`)
+                                img(src=`${blog.avatarUrl}`, alt='Image placeholder')
+                                h2 #{blog.name}
+                                p #{blog.puplishedAt}
+                    else
+                        p 
+                            | we will update our blog soon 
+            // END row
+block siteFeatures
+    section.site-section.bg-light
+        .container
+            .row.justify-content-center.mb-5
+                .col-md-7.text-center
+                    h2 We Share Our Thoughts
+                    p.lead
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.
+            .row.mb-5.align-items-center
+                .col-md-6.overflow.order-1
+                    img.img-fluid(src='images/img_1.jpg', alt='')
+                .col-md-1.order-2
+                .col-md-5.order-3
+                    h2.mb-4 First, We Love To Teach
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur reprehenderit laboriosam, eius ipsa consequuntur eos. Nulla dolorem repudiandae mollitia distinctio eos pariatur dolores, voluptate impedit. Eaque quos, sapiente ipsum possimus.
+                    p
+                        | Odio ducimus id vero tempora eaque rem voluptatibus tempore sequi ea quod, odit commodi voluptas! Nesciunt dolorum ea repudiandae. Officia eos impedit sapiente tempore, a dolore minus eaque culpa facere.
+                    p
+                        | Qui dolore quaerat expedita fugiat aperiam consequatur pariatur quod perspiciatis alias magni, recusandae esse dolorem beatae commodi quo labore earum harum odio voluptatibus non, error perferendis at delectus. Ab, amet.
+            .row.align-items-center
+                .col-md-6.overflow.order-3
+                    img.img-fluid(src='images/img_2.jpg', alt='')
+                .col-md-1.order-2
+                .col-md-5.order-1
+                    h2.mb-4 We Are Passionate About Web
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur reprehenderit laboriosam, eius ipsa consequuntur eos. Nulla dolorem repudiandae mollitia distinctio eos pariatur dolores, voluptate impedit. Eaque quos, sapiente ipsum possimus.
+                    p
+                        | Odio ducimus id vero tempora eaque rem voluptatibus tempore sequi ea quod, odit commodi voluptas! Nesciunt dolorum ea repudiandae. Officia eos impedit sapiente tempore, a dolore minus eaque culpa facere.
+                    p
+                        | Qui dolore quaerat expedita fugiat aperiam consequatur pariatur quod perspiciatis alias magni, recusandae esse dolorem beatae commodi quo labore earum harum odio voluptatibus non, error perferendis at delectus. Ab, amet.
+    include ../includes/instructors

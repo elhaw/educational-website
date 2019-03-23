@@ -1,0 +1,39 @@
+extends ../layout/index
+block banner
+    section.site-hero.site-hero-innerpage.overlay(data-stellar-background-ratio='0.5', style='background-image: url(/images/big_image_1.jpg);')
+        .container
+            .row.align-items-center.site-hero-inner.justify-content-center
+                .col-md-8.text-center
+                    .mb-5.element-animate
+                        h1 account
+                            span(class='account-name')  #{user.username}
+block features
+    section.site-section.bg-light
+        .container
+            .row.justify-content-center
+                .col-md-5.box
+                    h2.mb-5 Account information
+                        .row
+                            article.main-info.profile-main-info.row
+                                .input-group.my-4
+                                    .input-group-prepend
+                                    .input-group-text.d-flex
+                                        img.label-icon(src='/images/man-user.png', alt='user icon')
+                                    span #{user.username}
+                                .input-group.my-4
+                                    .input-group-prepend
+                                    .input-group-text.d-flex
+                                        img.label-icon(src='/images/email-icon.png', alt='user icon')
+                                    span #{user.email}
+
+block content
+    section.overflow
+        .container
+            .row.justify-content-center.align-items-center
+                .col-lg-7.order-lg-3.order-1.mb-lg-0.mb-5
+                    img.img-md-fluid(src='/images/person_testimonial_1.jpg', alt='Image placeholder')
+                .col-lg-1.order-lg-2
+                .col-lg-4.order-lg-1.order-2.mb-lg-0.mb-5
+                    blockquote.testimonial
+                        | “ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt nihil ab cumque molestiae commodi. ”
+                    p — John Doe, Certified ReactJS Student   

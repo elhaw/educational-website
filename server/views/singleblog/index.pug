@@ -1,0 +1,29 @@
+extends ../layout/index 
+block banner
+    section.site-hero.site-hero-innerpage.overlay(data-stellar-background-ratio='0.5', style='background-image: url(/images/big_image_1.jpg);')
+        .container
+            .row.align-items-center.site-hero-inner.justify-content-center
+                if ( validblog )
+                    .col-md-8.text-center
+                        .mb-5.element-animate
+                            h1.mb-3 #{blog.name}
+                            p.post-meta
+                                | #{blog.puplishedAt} 
+                                a(href='#') Joh Doe
+
+                else
+                    .col-md-8.text-center
+                        .mb-5.element-animate
+                            h1
+                                | wrong blog name
+                            a(href='/blog',class='wrong-blog' )  check available posts                           
+
+block features
+    if (validblog)
+        section.site-section
+            .container
+                .row
+                    include blogContent/index
+                    //- include sidebar/index
+    else
+            

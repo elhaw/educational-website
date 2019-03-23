@@ -1,0 +1,84 @@
+.pt-5
+    h3.mb-5 6 Comments
+    ul.comment-list
+        li.comment
+            .vcard.bio
+                img(src='/images/person_1.jpg', alt='Image placeholder')
+            .comment-body
+                h3 Jean Doe
+                .meta January 9, 2018 at 2:21pm
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                p
+                    a.reply(href='#') Reply
+        li.comment
+            .vcard.bio
+                img(src='/images/person_1.jpg', alt='Image placeholder')
+            .comment-body
+                h3 Jean Doe
+                .meta January 9, 2018 at 2:21pm
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                p
+                    a.reply(href='#') Reply
+            ul.children
+                li.comment
+                    .vcard.bio
+                        img(src='/images/person_1.jpg', alt='Image placeholder')
+                    .comment-body
+                        h3 Jean Doe
+                        .meta January 9, 2018 at 2:21pm
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                        p
+                            a.reply(href='#') Reply
+                    ul.children
+                        li.comment
+                            .vcard.bio
+                                img(src='/images/person_1.jpg', alt='Image placeholder')
+                            .comment-body
+                                h3 Jean Doe
+                                .meta January 9, 2018 at 2:21pm
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                                p
+                                    a.reply(href='#') Reply
+                            ul.children
+                                li.comment
+                                    .vcard.bio
+                                        img(src='/images/person_1.jpg', alt='Image placeholder')
+                                    .comment-body
+                                        h3 Jean Doe
+                                        .meta January 9, 2018 at 2:21pm
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                                        p
+                                            a.reply(href='#') Reply
+        li.comment
+            .vcard.bio
+                img(src='/images/person_1.jpg', alt='Image placeholder')
+            .comment-body
+                h3 Jean Doe
+                .meta January 9, 2018 at 2:21pm
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                p
+                    a.reply(href='#') Reply
+    // END comment-list
+    .comment-form-wrap.pt-5
+        h3.mb-5 Leave a comment
+        form.p-5.bg-light(action='#')
+            .form-group
+                label(for='name') Name *
+                input#name.form-control(type='text')
+            .form-group
+                label(for='email') Email *
+                input#email.form-control(type='email')
+            .form-group
+                label(for='website') Website
+                input#website.form-control(type='url')
+            .form-group
+                label(for='message') Message
+                textarea#message.form-control(name='', cols='30', rows='10')
+            .form-group
+                input.btn.btn-primary(type='submit', value='Post Comment')
