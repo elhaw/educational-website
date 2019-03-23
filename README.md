@@ -28,7 +28,6 @@ A step by step series of examples that tell you how to get a development env run
 
 * Clone the repo by using ```git clone```.
 * Run ```npm install``` on the cloned directory.
-* go to project root directory
 * create ```.env``` file and store database url | DEVELOPMENT_DB_URL=YOUR DATABASE url
 
 End with an example of getting some data out of the system or using it for a little demo
