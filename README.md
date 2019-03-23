@@ -4,7 +4,6 @@
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
 *  create  [mongodb Atlas](https://www.mongodb.com/cloud/atlas) account and follow [instructions](https://www.youtube.com/watch?v=_d8CBOtadRA) or through [official website](https://docs.mongodb.com/guides/cloud/atlas/)
 *  create  your database. Create collection named `` instructors ``  for  blogs and insert some documents inside.
     screen shot from Mongodb atlas
@@ -20,7 +19,6 @@ What things you need to install the software and how to install them
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
 
 * Clone the repo by using ```git clone```.
 * Run ```npm install``` on the cloned directory.
