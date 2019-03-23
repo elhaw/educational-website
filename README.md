@@ -19,7 +19,7 @@ What things you need to install the software and how to install them
 *  create  collection named `` blogs ``  for  blogs and insert some documents inside.
     screen shot from Mongodb atlas
     
-    ![blogs](readmeImages/instructors.jpg)
+    ![blogs](readmeImages/blogs.jpg)
 
 
 ### Installing
