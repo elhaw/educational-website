@@ -13,13 +13,13 @@ What things you need to install the software and how to install them
 *  create  your database and insert collection for   collection named `` instructors ``  for  blogs and insert some documents inside.
     screen shot from Mongodb atlas
     
-    ![alt instructor](readmeImages/instructors.jpg)
+    ![instructor](readmeImages/instructors.jpg)
 
 
 *  create  collection named `` blogs ``  for  blogs and insert some documents inside.
     screen shot from Mongodb atlas
     
-    ![alt blogs](readmeImages/blogs.jpg)
+    ![blogs](readmeImages/instructors.jpg)
 
 
 ### Installing
