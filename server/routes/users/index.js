@@ -45,7 +45,7 @@ module.exports = () => {
     })
 
     router.get('/account',protectAccount,(req,res)=>{
-        res.render('users/account')
+        res.send('account')
     })
 
 
