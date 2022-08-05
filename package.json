@@ -19,7 +19,7 @@
     "express-session": "^1.15.6",
     "helmet": "^3.16.0",
     "http-errors": "^1.7.2",
-    "mongoose": "^5.4.19",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
